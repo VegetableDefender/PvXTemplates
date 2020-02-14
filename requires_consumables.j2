@@ -1,0 +1,30 @@
+<noinclude>{{TOCright}}</noinclude>
+{| style="border:1px solid #CCBB88; background: #eeeebb; margin: auto;"
+|-
+| '''This build requires [[gww:Consumable|Consumables]] to operate properly.'''&nbsp;&nbsp;<!--
+-->{{parser_functions}}{% raw %}
+|}<includeonly>{{ #ifeq: {{NAMESPACE}} | Build | [[Category:Requires Consumables|{{PAGENAME}}]]}}</includeonly>
+<noinclude>
+== Usage ==
+<pre>
+{{Requires-Cons}}
+</pre>
+Add this to any page that requires [[gww:Consumables|Consumables]] to work.
+
+=== Parameters ==={%- endraw %}
+All of these can be set equal to "yes" to display an icon and a link to the respective item.
+{% for cat_name, items in catgories.items() %}
+==== {{cat_name}} ====
+  {%- for item in items %}
+*{{item.name}}
+  {%- endfor %}
+{% endfor -%}
+{% raw %}
+
+== Example ==
+<pre>{{User:Vegetaledefender/TestPage|pumpkin cookie=yes|candy apple=yes}}</pre>
+{{User:Vegetaledefender/TestPage|pumpkin cookie=yes|candy apple=yes}}
+
+[[Category:Templates/Build categorization]]
+</noinclude>
+{% endraw %}
