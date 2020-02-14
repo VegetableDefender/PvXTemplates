@@ -21,7 +21,7 @@ def justify_parts(tpl_parts):
     return out
 
 
-def generate_template(target="requires_consumables.pvx"):
+def generate_template(target="requires_consumables"):
     with open("consumables.json") as jf:
         DATA = json.load(jf)
 
@@ -42,8 +42,12 @@ def generate_template(target="requires_consumables.pvx"):
 
     parser_functions = "".join(justify_parts(tpl_parts))
 
-    with open(target, "w") as tf:
+
+    with open(target+".pvx", "w") as tf:
         tf.write(template.render(parser_functions=parser_functions, catgories=DATA))
+
+    with open(target+ "_collapsible.pvx", "w") as tf:
+        tf.write(template.render(parser_functions=parser_functions, catgories=DATA, collapsible=True))
 
 
 if __name__ == "__main__":
