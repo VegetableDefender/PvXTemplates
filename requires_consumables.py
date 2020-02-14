@@ -21,7 +21,7 @@ def justify_parts(tpl_parts):
     return out
 
 
-def generate_template(target="out.txt"):
+def generate_template(target="requires_consumables.pvx"):
     with open("consumables.json") as jf:
         DATA = json.load(jf)
 
