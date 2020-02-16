@@ -21,6 +21,13 @@ def justify_parts(tpl_parts):
     return out
 
 
+
+def write_params(params):
+    if not params:
+        return ""
+    return "{{{%s | %s }}}" % (params.pop(), write_params(params))
+
+
 def generate_template(target="requires_consumables"):
     with open("consumables.json") as jf:
         DATA = json.load(jf)
@@ -33,9 +40,9 @@ def generate_template(target="requires_consumables"):
     for cat in DATA.values():
         for item in cat:
             parts = [
-                "{{#ifeq: {{lc: {{{%s|}}} }}" % (item["params"][0],),
+                "{{#ifeq: {{lc: %s }}" % (write_params(list(reversed(item["params"]))),),
                 f"| yes | *[[File:{item['file']}|35px|link=gww:{item['name']}",
-                f"]] [[gww:{item['file']}|{item['file']}]]",
+                f"]] [[gww:{item['name']}|{item['name']}]]",
                 "}}<!--\n-->",
             ]
             tpl_parts.append(parts)
