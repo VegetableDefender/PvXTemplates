@@ -37,12 +37,16 @@ def generate_template(target="requires_consumables"):
 
     tpl_parts = []
 
-    for cat in DATA.values():
-        for item in cat:
+    for cat in DATA:
+        items = cat["items"]
+        if cat["selectable"]:
+            items.insert(0, dict(name=cat["name"], file=cat["file"], params=cat["params"]))
+        for item in items:
+            wiki_name = item.get('wiki') or item['name']
             parts = [
                 "{{#ifeq: {{lc: %s }}" % (write_params(list(reversed(item["params"]))),),
-                f"| yes | *[[File:{item['file']}|35px|link=gww:{item['name']}",
-                f"]] [[gww:{item['name']}|{item['name']}]]",
+                f"| yes | *[[File:{item['file']}|35px|link=gww:{wiki_name}",
+                f"]] [[gww:{wiki_name}|{item['name']}]]",
                 "}}<!--\n-->",
             ]
             tpl_parts.append(parts)
