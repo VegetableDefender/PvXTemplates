@@ -1,4 +1,4 @@
-{% raw %}<noinclude>{{TOCright}}</noinclude>
+{% raw %}<noinclude>{{TOC|pos=right}}</noinclude>
 {{#ifeq: {{lc: {{{1|}}} }} | collapsible |
 {{{!}}"border:1px solid #CCBB88"; cellspacing="0" cellpadding="6" rules="all" style="margin:auto; border-style:solid; border-width:1px;" class="collapsible collapsed"
 !style=background:#eeeebb{{!}}This build requires [[gww:Consumable{{!}}Consumables]] to operate properly.
@@ -19,7 +19,11 @@
 Add this to any page that requires [[gww:Consumables|Consumables]] to work.
 
 === Parameters ==={%- endraw %}
-All of these can be set equal to "yes" to display an icon and a link to the respective item.
+
+;collapsible
+:If you pass this as the first parameter, the list of consumables will turn into a collapsible
+
+All of the following parameters can be set equal to <em>yes</em> to display an icon and a link to the respective item.
 {% for cat in catgories %}
 ==== {{cat.name}} ====
 {%- if cat.selectable %}
@@ -30,23 +34,22 @@ All of these can be set equal to "yes" to display an icon and a link to the resp
   {%- endfor %}
 {% endfor %}
 
-== Example ==
-{%- if not collapsible %}
 {%- raw %}
+== Examples ==
+
+=== Expaned ===
 <pre>{{User:Vegetaledefender/TestPage|pumpkin cookie=yes|candy apple=yes}}</pre>
 {{User:Vegetaledefender/TestPage|pumpkin cookie=yes|candy apple=yes}}
 
 <pre>{{User:Vegetaledefender/TestPage|conset=yes|morale boost=yes}}</pre>
 {{User:Vegetaledefender/TestPage|conset=yes|morale boost=yes}}
-{% endraw %}
-{% else %}
-{% raw %}
-<pre>{{User:Vegetaledefender/TestRequires-Cons-Collapsible|pumpkin cookie=yes|candy apple=yes}}</pre>
-{{User:Vegetaledefender/TestRequires-Cons-Collapsible|pumpkin cookie=yes|candy apple=yes}}
 
-<pre>{{User:Vegetaledefender/TestRequires-Cons-Collapsible|conset=yes|morale boost=yes}}</pre>
-{{User:Vegetaledefender/TestRequires-Cons-Collapsible|conset=yes|morale boost=yes}}
-{% endraw %}
-{% endif -%}
+=== Collapsible ===
+To use a collapsible, simply pass <em>collapsible</em> as first parameter to the template
+
+<pre>{{User:Vegetaledefender/TestPage|collapsible|conset=yes|morale boost=yes}}</pre>
+{{User:Vegetaledefender/TestPage|collapsible|conset=yes|morale boost=yes}}
+
 [[Category:Templates/Build categorization]]
 </noinclude>
+{% endraw %}
