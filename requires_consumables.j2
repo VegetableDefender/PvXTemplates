@@ -28,13 +28,25 @@ All of these can be set equal to "yes" to display an icon and a link to the resp
   {%- for item in cat['items'] %}
 *{{item.name}}
   {%- endfor %}
-{% endfor -%}
-{% raw %}
+{% endfor %}
 
 == Example ==
+{%- if not collapsible %}
+{%- raw %}
 <pre>{{User:Vegetaledefender/TestPage|pumpkin cookie=yes|candy apple=yes}}</pre>
 {{User:Vegetaledefender/TestPage|pumpkin cookie=yes|candy apple=yes}}
 
+<pre>{{User:Vegetaledefender/TestPage|conset=yes|morale boost=yes}}</pre>
+{{User:Vegetaledefender/TestPage|conset=yes|morale boost=yes}}
+{% endraw %}
+{% else %}
+{% raw %}
+<pre>{{User:Vegetaledefender/TestRequires-Cons-Collapsible|pumpkin cookie=yes|candy apple=yes}}</pre>
+{{User:Vegetaledefender/TestRequires-Cons-Collapsible|pumpkin cookie=yes|candy apple=yes}}
+
+<pre>{{User:Vegetaledefender/TestRequires-Cons-Collapsible|conset=yes|morale boost=yes}}</pre>
+{{User:Vegetaledefender/TestRequires-Cons-Collapsible|conset=yes|morale boost=yes}}
+{% endraw %}
+{% endif -%}
 [[Category:Templates/Build categorization]]
 </noinclude>
-{% endraw %}
