@@ -18,9 +18,12 @@ Add this to any page that requires [[gww:Consumables|Consumables]] to work.
 
 === Parameters ==={%- endraw %}
 All of these can be set equal to "yes" to display an icon and a link to the respective item.
-{% for cat_name, items in catgories.items() %}
-==== {{cat_name}} ====
-  {%- for item in items %}
+{% for cat in catgories %}
+==== {{cat.name}} ====
+{%- if cat.selectable %}
+*<strong>Any item from this category:</strong> {{cat.params[0]}}
+{%- endif -%}
+  {%- for item in cat['items'] %}
 *{{item.name}}
   {%- endfor %}
 {% endfor -%}
