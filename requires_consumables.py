@@ -21,7 +21,6 @@ def justify_parts(tpl_parts):
     return out
 
 
-
 def write_params(params):
     if not params:
         return ""
@@ -56,9 +55,6 @@ def generate_template(target="requires_consumables"):
 
     with open(target+".pvx", "w") as tf:
         tf.write(template.render(parser_functions=parser_functions, catgories=DATA))
-
-    with open(target+ "_collapsible.pvx", "w") as tf:
-        tf.write(template.render(parser_functions=parser_functions, catgories=DATA, collapsible=True))
 
 
 if __name__ == "__main__":
