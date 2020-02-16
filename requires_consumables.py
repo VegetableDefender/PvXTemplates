@@ -39,7 +39,7 @@ def generate_template(target="requires_consumables"):
     for cat in DATA:
         items = cat["items"]
         if cat["selectable"]:
-            items.insert(0, dict(name=cat["name"], file=cat["file"], params=cat["params"]))
+            items = [*items, dict(name=cat["name"], file=cat["file"], params=cat["params"])]
         for item in items:
             wiki_name = item.get('wiki') or item['name']
             parts = [
