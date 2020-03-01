@@ -39,13 +39,6 @@
     ]
    },
    {
-    "name": "Seal of the Dragon Empire",
-    "file": "Seal of the Dragon Empire.png",
-    "params": [
-     "seal of the dragon empire"
-    ]
-   },
-   {
     "name": "Scroll of Resurrection",
     "file": "Scroll of Resurrection.png",
     "params": [
@@ -185,7 +178,19 @@
     "params": [
      "oath of purity"
     ]
-   },
+   }
+  ]
+ },
+ {
+  "name": "Personal Death Penalty Removal",
+  "selectable": true,
+  "file": "Death Penalty.jpg",
+  "wiki": "Death Penalty",
+  "params": [
+   "dp removal",
+   "death penalty removal"
+  ],
+  "items": [
    {
     "name": "Peppermint Candy Cane",
     "file": "Peppermint Candy Cane.png",
@@ -217,12 +222,12 @@
   ]
  },
  {
-  "name": "Morale Boost",
+  "name": "Party Wide Morale Boost",
   "selectable": true,
   "file": "Morale Boost.jpg",
   "params": [
-     "morale boost"
-   ],
+   "party morale boost"
+  ],
   "items": [
    {
     "name": "Elixir of Valor",
@@ -239,6 +244,23 @@
     ]
    },
    {
+    "name": "Rainbow Candy Cane",
+    "file": "Rainbow Candy Cane.png",
+    "params": [
+     "rainbow candy cane"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Personal Morale Boost",
+  "selectable": true,
+  "file": "Morale Boost.jpg",
+  "params": [
+   "morale boost"
+  ],
+  "items": [
+   {
     "name": "Pumpkin Cookie",
     "file": "Pumpkin Cookie.png",
     "params": [
@@ -246,10 +268,10 @@
     ]
    },
    {
-    "name": "Rainbow Candy Cane",
-    "file": "Rainbow Candy Cane.png",
+    "name": "Seal of the Dragon Empire",
+    "file": "Seal of the Dragon Empire.png",
     "params": [
-     "rainbow candy cane"
+     "seal of the dragon empire"
     ]
    }
   ]
