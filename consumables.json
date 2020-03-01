@@ -145,25 +145,32 @@
     "params": [
      "war supplies"
     ]
-  },
+   },
    {
     "name": "Ghost-in-the-Box",
     "file": "Ghost-in-the-Box.png",
     "params": [
      "ghost-in-the-box"
     ]
+   },
+   {
+    "name": "Lunar Fortune",
+    "file": "Lunar Fortune.png",
+    "params": [
+     "lunar fortune"
+    ]
    }
   ]
  },
  {
-  "name": "Death Penalty Removal",
+  "name": "Party Wide Death Penalty Removal",
   "selectable": true,
   "file": "Death Penalty.jpg",
   "wiki": "Death Penalty",
   "params": [
-     "dp removal",
-     "death penalty removal"
-   ],
+   "party dp removal",
+   "party death penalty removal"
+  ],
   "items": [
    {
     "name": "Four-Leaf Clover",
