@@ -145,6 +145,13 @@
     "params": [
      "war supplies"
     ]
+  },
+   {
+    "name": "Ghost-in-the-Box",
+    "file": "Ghost-in-the-Box.png",
+    "params": [
+     "ghost-in-the-box"
+    ]
    }
   ]
  },
