@@ -1,15 +1,15 @@
-{% raw %}<noinclude>{{TOCright}}</noinclude>{% endraw %}
-{% if collapsible -%}
-{| border="border:1px solid #CCBB88; cellspacing="0" cellpadding="6" rules="all" style="margin:auto; border-style:solid; border-width:1px;" class="collapsible collapsed"
-!style=background:#eeeebb|This build requires [[gww:Consumable|Consumables]] to operate properly.
-|-
-|<!--
-{%- else -%}
-{| style="border:1px solid #CCBB88; background: #eeeebb; margin: auto;"
-|-
-| '''This build requires [[gww:Consumable|Consumables]] to operate properly.'''&nbsp;&nbsp;<!--
-{%-endif %}
--->{{parser_functions}}{% raw %}
+{% raw %}<noinclude>{{TOC|pos=right}}</noinclude>
+{{#ifeq: {{lc: {{{1|}}} }} | collapsible |
+{{{!}}"border:1px solid #CCBB88"; cellspacing="0" cellpadding="6" rules="all" style="margin:auto; border-style:solid; border-width:1px;" class="collapsible collapsed"
+!style=background:#eeeebb{{!}}This build requires [[gww:Consumable{{!}}Consumables]] to operate properly.
+{{!}}-
+{{!}}
+|
+{{{!}} style="border:1px solid #CCBB88; background: #eeeebb; margin: auto;"
+{{!}}-
+{{!}} '''This build requires [[gww:Consumable|Consumables]] to operate properly.'''&nbsp;&nbsp;
+}}<!--
+-->{% endraw %}{{parser_functions}}{% raw %}
 |}<includeonly>{{ #ifeq: {{NAMESPACE}} | Build | [[Category:Requires Consumables|{{PAGENAME}}]]}}</includeonly>
 <noinclude>
 == Usage ==
@@ -19,18 +19,36 @@
 Add this to any page that requires [[gww:Consumables|Consumables]] to work.
 
 === Parameters ==={%- endraw %}
-All of these can be set equal to "yes" to display an icon and a link to the respective item.
-{% for cat_name, items in catgories.items() %}
-==== {{cat_name}} ====
-  {%- for item in items %}
-*{{item.name}}
-  {%- endfor %}
-{% endfor -%}
-{% raw %}
 
-== Example ==
+;collapsible
+:If you pass this as the first parameter, the list of consumables will turn into a collapsible
+
+All of the following parameters can be set equal to <em>yes</em> to display an icon and a link to the respective item.
+{% for cat in catgories %}
+==== {{cat.name}} ====
+{%- if cat.selectable %}
+*<strong>Any item from this category:</strong> {{cat.params[0]}}
+{%- endif -%}
+  {%- for item in cat['items'] %}
+*{{item.params[0]}}{%if item.params|length > 1 %}. <em>Alternative: {{", ".join(item.params[1:])}}</em> {% endif %}
+  {%- endfor %}
+{% endfor %}
+
+{%- raw %}
+== Examples ==
+
+=== Expaned ===
 <pre>{{User:Vegetaledefender/TestPage|pumpkin cookie=yes|candy apple=yes}}</pre>
 {{User:Vegetaledefender/TestPage|pumpkin cookie=yes|candy apple=yes}}
+
+<pre>{{User:Vegetaledefender/TestPage|conset=yes|morale boost=yes}}</pre>
+{{User:Vegetaledefender/TestPage|conset=yes|morale boost=yes}}
+
+=== Collapsible ===
+To use a collapsible, simply pass <em>collapsible</em> as first parameter to the template
+
+<pre>{{User:Vegetaledefender/TestPage|collapsible|conset=yes|morale boost=yes}}</pre>
+{{User:Vegetaledefender/TestPage|collapsible|conset=yes|morale boost=yes}}
 
 [[Category:Templates/Build categorization]]
 </noinclude>

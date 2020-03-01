@@ -21,6 +21,12 @@ def justify_parts(tpl_parts):
     return out
 
 
+def write_params(params):
+    if not params:
+        return ""
+    return "{{{%s | %s }}}" % (params.pop(), write_params(params))
+
+
 def generate_template(target="requires_consumables"):
     with open("consumables.json") as jf:
         DATA = json.load(jf)
@@ -30,12 +36,16 @@ def generate_template(target="requires_consumables"):
 
     tpl_parts = []
 
-    for cat in DATA.values():
-        for item in cat:
+    for cat in DATA:
+        items = cat["items"]
+        if cat["selectable"]:
+            items = [*items, dict(name=cat["name"], file=cat["file"], params=cat["params"])]
+        for item in items:
+            wiki_name = item.get('wiki') or item['name']
             parts = [
-                "{{#ifeq: {{lc: {{{%s|}}} }}" % (item["params"][0],),
-                f"| yes | *[[File:{item['file']}|35px|link=gww:{item['name']}",
-                f"]] [[gww:{item['file']}|{item['file']}]]",
+                "{{#ifeq: {{lc: %s }}" % (write_params(list(reversed(item["params"]))),),
+                f"| yes | *[[File:{item['file']}|35px|link=gww:{wiki_name}",
+                f"]] [[gww:{wiki_name}|{item['name']}]]",
                 "}}<!--\n-->",
             ]
             tpl_parts.append(parts)
@@ -45,9 +55,6 @@ def generate_template(target="requires_consumables"):
 
     with open(target+".pvx", "w") as tf:
         tf.write(template.render(parser_functions=parser_functions, catgories=DATA))
-
-    with open(target+ "_collapsible.pvx", "w") as tf:
-        tf.write(template.render(parser_functions=parser_functions, catgories=DATA, collapsible=True))
 
 
 if __name__ == "__main__":

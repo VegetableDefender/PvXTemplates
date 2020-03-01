@@ -1,406 +1,482 @@
-{
- "General": [
-  {
-   "name": "Armor of Salvation",
-   "file": "Armor of Salvation.png",
-   "params": [
-    "armor of salvation", "aos", "conset"
-   ]
-  },
-  {
-   "name": "Essence of Celerity",
-   "file": "EoC.png",
-   "params": [
-    "essence of celerity", "eoc", "conset"
-   ]
-  },
-  {
-   "name": "Grail of Might",
-   "file": "GoM.png",
-   "params": [
-    "grail of might", "gom", "conset"
-   ]
-  },
-  {
-   "name": "Powerstone of Courage",
-   "file": "Powerstone of Courage.png",
-   "params": [
-    "powerstone of courage", "pstone"
-   ]
-  },
-  {
-   "name": "Seal of the Dragon Empire",
-   "file": "Seal of the Dragon Empire.png",
-   "params": [
-    "seal of the dragon empire"
-   ]
+[
+ {
+  "name": "General",
+  "selectable": false,
+  "items": [
+   {
+    "name": "Armor of Salvation",
+    "file": "Armor of Salvation.png",
+    "params": [
+     "armor of salvation",
+     "aos",
+     "conset"
+    ]
+   },
+   {
+    "name": "Essence of Celerity",
+    "file": "EoC.png",
+    "params": [
+     "essence of celerity",
+     "eoc",
+     "conset"
+    ]
+   },
+   {
+    "name": "Grail of Might",
+    "file": "GoM.png",
+    "params": [
+     "grail of might",
+     "gom",
+     "conset"
+    ]
+   },
+   {
+    "name": "Powerstone of Courage",
+    "file": "Powerstone of Courage.png",
+    "params": [
+     "powerstone of courage",
+     "pstone"
+    ]
+   },
+   {
+    "name": "Seal of the Dragon Empire",
+    "file": "Seal of the Dragon Empire.png",
+    "params": [
+     "seal of the dragon empire"
+    ]
+   },
+   {
+    "name": "Scroll of Resurrection",
+    "file": "Scroll of Resurrection.png",
+    "params": [
+     "scroll of resurrection"
+    ]
+   }
+  ]
  },
-  {
-   "name": "Scroll of Resurrection",
-   "file": "Scroll of Resurrection.png",
-   "params": [
-    "scroll of resurrection"
-   ]
-  }
- ],
- "Pcons": [
-  {
-   "name": "Birthday Cupcake",
-   "file": "Birthday Cupcake.png",
-   "params": [
-    "birthday cupcake", "cupcake"
-   ]
+ {
+  "name": "Pcons",
+  "selectable": false,
+  "items": [
+   {
+    "name": "Birthday Cupcake",
+    "file": "Birthday Cupcake.png",
+    "params": [
+     "birthday cupcake",
+     "cupcake"
+    ]
+   },
+   {
+    "name": "Blue Rock Candy",
+    "file": "Blue Rock Candy.png",
+    "params": [
+     "blue rock candy",
+     "rainbow rock"
+    ]
+   },
+   {
+    "name": "Green Rock Candy",
+    "file": "Green Rock Candy.png",
+    "params": [
+     "green rock candy",
+     "rainbow rock"
+    ]
+   },
+   {
+    "name": "Red Rock Candy",
+    "file": "Red Rock Candy.png",
+    "params": [
+     "red rock candy",
+     "rainbow rock"
+    ]
+   },
+   {
+    "name": "Bowl of Skalefin Soup",
+    "file": "Bowl of Skalefin Soup.png",
+    "params": [
+     "bowl of skalefin soup"
+    ]
+   },
+   {
+    "name": "Candy Apple",
+    "file": "Candy Apple.png",
+    "params": [
+     "candy apple"
+    ]
+   },
+   {
+    "name": "Candy Corn",
+    "file": "Candy Corn.png",
+    "params": [
+     "candy corn"
+    ]
+   },
+   {
+    "name": "Drake Kabob",
+    "file": "Drake Kabob.png",
+    "params": [
+     "drake kabob"
+    ]
+   },
+   {
+    "name": "Golden Egg",
+    "file": "Golden Egg.png",
+    "params": [
+     "golden egg"
+    ]
+   },
+   {
+    "name": "Pahnai Salad",
+    "file": "Pahnai Salad.png",
+    "params": [
+     "pahnai salad"
+    ]
+   },
+   {
+    "name": "Slice of Pumpkin Pie",
+    "file": "Slice of Pumpkin Pie.png",
+    "params": [
+     "slice of pumpkin pie"
+    ]
+   },
+   {
+    "name": "War Supplies",
+    "file": "War Supplies.png",
+    "params": [
+     "war supplies"
+    ]
   },
-  {
-   "name": "Blue Rock Candy",
-   "file": "Blue Rock Candy.png",
-   "params": [
-    "blue rock candy", "rainbow-rock"
-   ]
-  },
-  {
-   "name": "Green Rock Candy",
-   "file": "Green Rock Candy.png",
-   "params": [
-    "green rock candy", "rainbow-rock"
-   ]
-  },
-  {
-   "name": "Red Rock Candy",
-   "file": "Red Rock Candy.png",
-   "params": [
-    "red rock candy", "rainbow-rock"
-   ]
-  },
-  {
-   "name": "Bowl of Skalefin Soup",
-   "file": "Bowl of Skalefin Soup.png",
-   "params": [
-    "bowl of skalefin soup"
-   ]
-  },
-  {
-   "name": "Candy Apple",
-   "file": "Candy Apple.png",
-   "params": [
-    "candy apple"
-   ]
-  },
-  {
-   "name": "Candy Corn",
-   "file": "Candy Corn.png",
-   "params": [
-    "candy corn"
-   ]
-  },
-  {
-   "name": "Drake Kabob",
-   "file": "Drake Kabob.png",
-   "params": [
-    "drake kabob"
-   ]
-  },
-  {
-   "name": "Golden Egg",
-   "file": "Golden Egg.png",
-   "params": [
-    "golden egg"
-   ]
-  },
-  {
-   "name": "Pahnai Salad",
-   "file": "Pahnai Salad.png",
-   "params": [
-    "pahnai salad"
-   ]
-  },
-  {
-   "name": "Slice of Pumpkin Pie",
-   "file": "Slice of Pumpkin Pie.png",
-   "params": [
-    "slice of pumpkin pie"
-   ]
-  },
-  {
-   "name": "War Supplies",
-   "file": "War Supplies.png",
-   "params": [
-    "war supplies"
-   ]
-  }
- ],
- "Death Penality Removal": [
-  {
-   "name": "Four-Leaf Clover",
-   "file": "Four-Leaf Clover.png",
-   "params": [
-    "four-leaf clover"
-   ]
-  },
-  {
-   "name": "Oath of Purity",
-   "file": "Oath of Purity.png",
-   "params": [
-    "oath of purity"
-   ]
-  },
-  {
-   "name": "Peppermint Candy Cane",
-   "file": "Peppermint Candy Cane.png",
-   "params": [
-    "peppermint candy cane"
-   ]
-  },
-  {
-   "name": "Refined Jelly",
-   "file": "Refined Jelly.png",
-   "params": [
-    "refined jelly"
-   ]
-  },
-  {
-   "name": "Shining Blade Rations",
-   "file": "Shining Blade Rations.png",
-   "params": [
-    "shining blade rations"
-   ]
-  },
-  {
-   "name": "Wintergreen Candy Cane",
-   "file": "Wintergreen Candy Cane.png",
-   "params": [
-    "wintergreen candy cane"
-   ]
-  }
- ],
- "Morale Boost": [
-  {
-   "name": "Elixir of Valor",
-   "file": "Elixir of Valor.png",
-   "params": [
-    "elixir of valor"
-   ]
-  },
-  {
-   "name": "Honeycomb",
-   "file": "Honeycomb.png",
-   "params": [
-    "honeycomb"
-   ]
-  },
-  {
-   "name": "Pumpkin Cookie",
-   "file": "Pumpkin Cookie.png",
-   "params": [
-    "pumpkin cookie"
-   ]
-  },
-  {
-   "name": "Rainbow Candy Cane",
-   "file": "Rainbow Candy Cane.png",
-   "params": [
-    "rainbow candy cane"
-   ]
-  }
- ],
- "Scrolls": [
-  {
-   "name": "Scroll of Adventurer's Insight",
-   "file": "Scroll of Adventurer's Insight.png",
-   "params": [
-    "scroll of adventurer's insight"
-   ]
-  },
-  {
-   "name": "Scroll of Berserker's Insight",
-   "file": "Scroll of Berserker's Insight.png",
-   "params": [
-    "scroll of berserker's insight"
-   ]
-  },
-  {
-   "name": "Scroll of Hero's Insight",
-   "file": "Scroll of Hero's Insight.png",
-   "params": [
-    "scroll of hero's insight"
-   ]
-  },
-  {
-   "name": "Scroll of Hunter's Insight",
-   "file": "Scroll of Hunter's Insight.png",
-   "params": [
-    "scroll of hunter's insight"
-   ]
-  },
-  {
-   "name": "Scroll of Rampager's Insight",
-   "file": "Scroll of Rampager's Insight.png",
-   "params": [
-    "scroll of rampager's insight"
-   ]
-  },
-  {
-   "name": "Scroll of Slayer's Insight",
-   "file": "Scroll of Slayer's Insight.png",
-   "params": [
-    "scroll of slayer's insight"
-   ]
-  },
-  {
-   "name": "Scroll of the Lightbringer",
-   "file": "Scroll of the Lightbringer.png",
-   "params": [
-    "scroll of the lightbringer"
-   ]
-  }
-],
- "Summoning": [
-  {
-   "name": "Amber Summoning Stone",
-   "file": "Amber Summoning Stone.png",
-   "params": [
-    "amber summoning stone"
-   ]
-  },
-  {
-   "name": "Arctic Summoning Stone",
-   "file": "Arctic Summoning Stone.png",
-   "params": [
-    "arctic summoning stone"
-   ]
-  },
-  {
-   "name": "Automaton Summoning Stone",
-   "file": "Automaton Summoning Stone.png",
-   "params": [
-    "automaton summoning stone"
-   ]
-  },
-  {
-   "name": "Celestial Summoning Stone",
-   "file": "Celestial Summoning Stone.png",
-   "params": [
-    "celestial summoning stone"
-   ]
-  },
-  {
-   "name": "Chitinous Summoning Stone",
-   "file": "Chitinous Summoning Stone.png",
-   "params": [
-    "chitinous summoning stone"
-   ]
-  },
-  {
-   "name": "Demonic Summoning Stone",
-   "file": "Demonic Summoning Stone.png",
-   "params": [
-    "demonic summoning stone"
-   ]
-  },
-  {
-   "name": "Fossilized Summoning Stone",
-   "file": "Fossilized Summoning Stone.png",
-   "params": [
-    "fossilized summoning stone"
-   ]
-  },
-  {
-   "name": "Frosty Summoning Stone",
-   "file": "Frosty Summoning Stone.png",
-   "params": [
-    "frosty summoning stone"
-   ]
-  },
-  {
-   "name": "Gelatinous Summoning Stone",
-   "file": "Gelatinous Summoning Stone.png",
-   "params": [
-    "gelatinous summoning stone"
-   ]
-  },
-  {
-   "name": "Ghastly Summoning Stone",
-   "file": "Ghastly Summoning Stone.png",
-   "params": [
-    "ghastly summoning stone"
-   ]
-  },
-  {
-   "name": "Igneous Summoning Stone",
-   "file": "Igneous Summoning Stone.png",
-   "params": [
-    "igneous summoning stone"
-   ]
-  },
-  {
-   "name": "Imperial Guard Reinforcement Order",
-   "file": "Imperial Guard Reinforcement Order.png",
-   "params": [
-    "imperial guard reinforcement order"
-   ]
-  },
-  {
-   "name": "Jadeite Summoning Stone",
-   "file": "Jadeite Summoning Stone.png",
-   "params": [
-    "jadeite summoning stone"
-   ]
-  },
-  {
-   "name": "Legionnaire Summoning Crystal",
-   "file": "Legionnaire Summoning Crystal.png",
-   "params": [
-    "legionnaire summoning crystal"
-   ]
-  },
-  {
-   "name": "Mercantile Summoning Stone",
-   "file": "Mercantile Summoning Stone.png",
-   "params": [
-    "mercantile summoning stone"
-   ]
-  },
-  {
-   "name": "Mischievous Summoning Stone",
-   "file": "Mischievous Summoning Stone.png",
-   "params": [
-    "mischievous summoning stone"
-   ]
-  },
-  {
-   "name": "Mysterious Summoning Stone",
-   "file": "Mysterious Summoning Stone.png",
-   "params": [
-    "mysterious summoning stone"
-   ]
-  },
-  {
-   "name": "Mystical Summoning Stone",
-   "file": "Mystical Summoning Stone.png",
-   "params": [
-    "mystical summoning stone"
-   ]
-  },
-  {
-   "name": "Shining Blade War Horn",
-   "file": "Shining Blade War Horn.png",
-   "params": [
-    "shining blade war horn"
-   ]
-  },
-  {
-   "name": "Tengu Support Flare",
-   "file": "Tengu Support Flare.png",
-   "params": [
-    "tengu support flare"
-   ]
-  },
-  {
-   "name": "Zaishen Summoning Stone",
-   "file": "Zaishen Summoning Stone.png",
-   "params": [
-    "zaishen summoning stone"
-   ]
-  }
- ]
-}
+   {
+    "name": "Ghost-in-the-Box",
+    "file": "Ghost-in-the-Box.png",
+    "params": [
+     "ghost-in-the-box"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Death Penalty Removal",
+  "selectable": true,
+  "file": "Death Penalty.jpg",
+  "wiki": "Death Penalty",
+  "params": [
+     "dp removal",
+     "death penalty removal"
+   ],
+  "items": [
+   {
+    "name": "Four-Leaf Clover",
+    "file": "Four-Leaf Clover.png",
+    "params": [
+     "four-leaf clover"
+    ]
+   },
+   {
+    "name": "Oath of Purity",
+    "file": "Oath of Purity.png",
+    "params": [
+     "oath of purity"
+    ]
+   },
+   {
+    "name": "Peppermint Candy Cane",
+    "file": "Peppermint Candy Cane.png",
+    "params": [
+     "peppermint candy cane"
+    ]
+   },
+   {
+    "name": "Refined Jelly",
+    "file": "Refined Jelly.png",
+    "params": [
+     "refined jelly"
+    ]
+   },
+   {
+    "name": "Shining Blade Rations",
+    "file": "Shining Blade Rations.png",
+    "params": [
+     "shining blade rations"
+    ]
+   },
+   {
+    "name": "Wintergreen Candy Cane",
+    "file": "Wintergreen Candy Cane.png",
+    "params": [
+     "wintergreen candy cane"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Morale Boost",
+  "selectable": true,
+  "file": "Morale Boost.jpg",
+  "params": [
+     "morale boost"
+   ],
+  "items": [
+   {
+    "name": "Elixir of Valor",
+    "file": "Elixir of Valor.png",
+    "params": [
+     "elixir of valor"
+    ]
+   },
+   {
+    "name": "Honeycomb",
+    "file": "Honeycomb.png",
+    "params": [
+     "honeycomb"
+    ]
+   },
+   {
+    "name": "Pumpkin Cookie",
+    "file": "Pumpkin Cookie.png",
+    "params": [
+     "pumpkin cookie"
+    ]
+   },
+   {
+    "name": "Rainbow Candy Cane",
+    "file": "Rainbow Candy Cane.png",
+    "params": [
+     "rainbow candy cane"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Alcohol",
+  "selectable": false,
+  "items": [
+   {
+    "name": "Alcohol",
+    "file": "Alcohol.png",
+    "params": [
+     "alcohol"
+    ]
+   },
+   {
+    "name": "Battle Isle Iced Tea",
+    "file": "Battle Isle Iced Tea.png",
+    "params": [
+     "battle isle iced tea"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Scrolls",
+  "selectable": false,
+  "items": [
+   {
+    "name": "Scroll of Adventurer's Insight",
+    "file": "Scroll of Adventurer's Insight.png",
+    "params": [
+     "scroll of adventurer's insight"
+    ]
+   },
+   {
+    "name": "Scroll of Berserker's Insight",
+    "file": "Scroll of Berserker's Insight.png",
+    "params": [
+     "scroll of berserker's insight"
+    ]
+   },
+   {
+    "name": "Scroll of Hero's Insight",
+    "file": "Scroll of Hero's Insight.png",
+    "params": [
+     "scroll of hero's insight"
+    ]
+   },
+   {
+    "name": "Scroll of Hunter's Insight",
+    "file": "Scroll of Hunter's Insight.png",
+    "params": [
+     "scroll of hunter's insight"
+    ]
+   },
+   {
+    "name": "Scroll of Rampager's Insight",
+    "file": "Scroll of Rampager's Insight.png",
+    "params": [
+     "scroll of rampager's insight"
+    ]
+   },
+   {
+    "name": "Scroll of Slayer's Insight",
+    "file": "Scroll of Slayer's Insight.png",
+    "params": [
+     "scroll of slayer's insight"
+    ]
+   },
+   {
+    "name": "Scroll of the Lightbringer",
+    "file": "Scroll of the Lightbringer.png",
+    "params": [
+     "scroll of the lightbringer"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Summoning Stone",
+  "selectable": true,
+  "file": "Summoning_Stone.png",
+  "params": [
+     "summoning stone"
+   ],
+  "items": [
+   {
+    "name": "Amber Summoning Stone",
+    "file": "Amber Summoning Stone.png",
+    "params": [
+     "amber summoning stone"
+    ]
+   },
+   {
+    "name": "Arctic Summoning Stone",
+    "file": "Arctic Summoning Stone.png",
+    "params": [
+     "arctic summoning stone"
+    ]
+   },
+   {
+    "name": "Automaton Summoning Stone",
+    "file": "Automaton Summoning Stone.png",
+    "params": [
+     "automaton summoning stone"
+    ]
+   },
+   {
+    "name": "Celestial Summoning Stone",
+    "file": "Celestial Summoning Stone.png",
+    "params": [
+     "celestial summoning stone"
+    ]
+   },
+   {
+    "name": "Chitinous Summoning Stone",
+    "file": "Chitinous Summoning Stone.png",
+    "params": [
+     "chitinous summoning stone"
+    ]
+   },
+   {
+    "name": "Demonic Summoning Stone",
+    "file": "Demonic Summoning Stone.png",
+    "params": [
+     "demonic summoning stone"
+    ]
+   },
+   {
+    "name": "Fossilized Summoning Stone",
+    "file": "Fossilized Summoning Stone.png",
+    "params": [
+     "fossilized summoning stone"
+    ]
+   },
+   {
+    "name": "Frosty Summoning Stone",
+    "file": "Frosty Summoning Stone.png",
+    "params": [
+     "frosty summoning stone"
+    ]
+   },
+   {
+    "name": "Gelatinous Summoning Stone",
+    "file": "Gelatinous Summoning Stone.png",
+    "params": [
+     "gelatinous summoning stone"
+    ]
+   },
+   {
+    "name": "Ghastly Summoning Stone",
+    "file": "Ghastly Summoning Stone.png",
+    "params": [
+     "ghastly summoning stone"
+    ]
+   },
+   {
+    "name": "Igneous Summoning Stone",
+    "file": "Igneous Summoning Stone.png",
+    "params": [
+     "igneous summoning stone"
+    ]
+   },
+   {
+    "name": "Imperial Guard Reinforcement Order",
+    "file": "Imperial Guard Reinforcement Order.png",
+    "params": [
+     "imperial guard reinforcement order"
+    ]
+   },
+   {
+    "name": "Jadeite Summoning Stone",
+    "file": "Jadeite Summoning Stone.png",
+    "params": [
+     "jadeite summoning stone"
+    ]
+   },
+   {
+    "name": "Legionnaire Summoning Crystal",
+    "file": "Legionnaire Summoning Crystal.png",
+    "params": [
+     "legionnaire summoning crystal"
+    ]
+   },
+   {
+    "name": "Mercantile Summoning Stone",
+    "file": "Mercantile Summoning Stone.png",
+    "params": [
+     "mercantile summoning stone"
+    ]
+   },
+   {
+    "name": "Mischievous Summoning Stone",
+    "file": "Mischievous Summoning Stone.png",
+    "params": [
+     "mischievous summoning stone"
+    ]
+   },
+   {
+    "name": "Mysterious Summoning Stone",
+    "file": "Mysterious Summoning Stone.png",
+    "params": [
+     "mysterious summoning stone"
+    ]
+   },
+   {
+    "name": "Mystical Summoning Stone",
+    "file": "Mystical Summoning Stone.png",
+    "params": [
+     "mystical summoning stone"
+    ]
+   },
+   {
+    "name": "Shining Blade War Horn",
+    "file": "Shining Blade War Horn.png",
+    "params": [
+     "shining blade war horn"
+    ]
+   },
+   {
+    "name": "Tengu Support Flare",
+    "file": "Tengu Support Flare.png",
+    "params": [
+     "tengu support flare"
+    ]
+   },
+   {
+    "name": "Zaishen Summoning Stone",
+    "file": "Zaishen Summoning Stone.png",
+    "params": [
+     "zaishen summoning stone"
+    ]
+   }
+  ]
+ }
+]
