@@ -30,7 +30,7 @@ All of the following parameters can be set equal to <em>yes</em> to display an i
 *<strong>Any item from this category:</strong> {{cat.params[0]}}
 {%- endif -%}
   {%- for item in cat['items'] %}
-*{{item.name}}
+*{{item.params[0]}}{%if item.params|length > 1 %}. <em>Alternative: {{", ".join(item.params[1:])}}</em> {% endif %}
   {%- endfor %}
 {% endfor %}
 
