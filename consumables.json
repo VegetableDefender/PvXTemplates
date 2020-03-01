@@ -323,12 +323,12 @@
   ]
  },
  {
-  "name": "Summoning Stone",
+  "name": "Summoning Stones",
   "selectable": true,
   "file": "Summoning_Stone.png",
   "params": [
-     "summoning stone"
-   ],
+   "summoning stone"
+  ],
   "items": [
    {
     "name": "Amber Summoning Stone",
