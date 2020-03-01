@@ -248,6 +248,26 @@
   ]
  },
  {
+  "name": "Alcohol",
+  "selectable": false,
+  "items": [
+   {
+    "name": "Alcohol",
+    "file": "Alcohol.png",
+    "params": [
+     "alcohol"
+    ]
+   },
+   {
+    "name": "Battle Isle Iced Tea",
+    "file": "Battle Isle Iced Tea.png",
+    "params": [
+     "battle isle iced tea"
+    ]
+   }
+  ]
+ },
+ {
   "name": "Scrolls",
   "selectable": false,
   "items": [
