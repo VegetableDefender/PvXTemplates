@@ -17,6 +17,7 @@
     "file": "EoC.png",
     "params": [
      "essence of celerity",
+     "bu",
      "eoc",
      "conset"
     ]
@@ -225,6 +226,7 @@
   "name": "Party Wide Morale Boost",
   "selectable": true,
   "file": "Morale Boost.jpg",
+  "wiki": "Morale Boost",
   "params": [
    "party morale boost"
   ],
@@ -256,6 +258,7 @@
   "name": "Personal Morale Boost",
   "selectable": true,
   "file": "Morale Boost.jpg",
+  "wiki": "Morale Boost",
   "params": [
    "morale boost"
   ],

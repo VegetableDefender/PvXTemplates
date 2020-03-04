@@ -39,9 +39,9 @@ def generate_template(target="requires_consumables"):
     for cat in DATA:
         items = cat["items"]
         if cat["selectable"]:
-            items = [*items, dict(name=cat["name"], file=cat["file"], params=cat["params"])]
+            items = [*items, dict(name=cat["name"], file=cat["file"], params=cat["params"], wiki=cat.get("wiki"))]
         for item in items:
-            wiki_name = item.get('wiki') or item['name']
+            wiki_name = item.get('wiki', item['name'])
             parts = [
                 "{{#ifeq: {{lc: %s }}" % (write_params(list(reversed(item["params"]))),),
                 f"| yes | *[[File:{item['file']}|35px|link=gww:{wiki_name}",
