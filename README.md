@@ -22,5 +22,5 @@ A set of scripts to generate some gwpvx templates
 - The second level is a list of objects, containing the following keys:
   - `ǹame`*(string)*: Display name of the consumable
   - `file`*(string)*: PvX internal name of the image to be used
-  - `params`*(list -> string)*: Parameter(s) that need to be set equal to `yes` in order to select this consumable. At the moment, only the first parameter is being used
+  - `params`*(list -> string)*: Parameter(s) that need to be set equal to `yes` in order to select this consumable
 
