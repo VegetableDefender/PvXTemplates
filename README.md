@@ -3,7 +3,7 @@
 A set of scripts to generate some gwpvx templates
 
 
-## {{Reuires-Consumables}}
+## {{Requires-Consumables}}
 
 [PvX Talk](https://gwpvx.gamepedia.com/User_talk:Vegetaledefender/TestPage#Consumables_Template%3A_Types)
 
@@ -18,9 +18,9 @@ A set of scripts to generate some gwpvx templates
 
 `consumables.json`'s structure is simple:
 
-- The first level keys are parameter categories. Their names will be used as section headers in the PvX pages **Usage** section
+- The first level keys are parameter categories. Their names will be used as section headers in the PvX page's **Usage** section
 - The second level is a list of objects, containing the following keys:
   - `ǹame`*(string)*: Display name of the consumable
   - `file`*(string)*: PvX internal name of the image to be used
-  - `params`*(list -> string)*: Parameter(s) that need to be set equal to `yes` in order to select this consumable. At the moment, only the fist parameter is being used
+  - `params`*(list -> string)*: Parameter(s) that need to be set equal to `yes` in order to select this consumable. At the moment, only the first parameter is being used
 
